@@ -1,10 +1,12 @@
 const { v4 } = require('uuid');
 const AWS = require('aws-sdk');
-const addTask = async (event) => {
+const middy = require('@middy/core');
+const jsonBodyParser = require('@middy/http-json-body-parser');
 
+const addTask = async (event) => {
     const dynamoDB = new AWS.DynamoDB.DocumentClient();
 
-    const { title, description } = JSON.parse(event.body);
+    const { title, description } = event.body;
     const createdAt = new Date();
     const id = v4();
 
@@ -28,5 +30,5 @@ const addTask = async (event) => {
 }
 
 module.exports = {
-    addTask
+    addTask: middy(addTask).use(jsonBodyParser()),
 }
