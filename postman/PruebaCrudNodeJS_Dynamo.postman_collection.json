@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "3ea60639-16ef-4eb4-a8f2-0c8c48125bdd",
+		"name": "PruebaCrudNodeJS_Dynamo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"My first task 3\",\r\n    \"description\": \"First description 3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cxnpz5tld5.execute-api.us-east-1.amazonaws.com/tasks",
+					"protocol": "https",
+					"host": [
+						"cxnpz5tld5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cxnpz5tld5.execute-api.us-east-1.amazonaws.com/tasks",
+					"protocol": "https",
+					"host": [
+						"cxnpz5tld5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
