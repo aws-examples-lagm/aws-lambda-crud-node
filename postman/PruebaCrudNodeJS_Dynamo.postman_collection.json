@@ -57,6 +57,29 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get Task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cxnpz5tld5.execute-api.us-east-1.amazonaws.com/tasks/2e40e9a8-1f07-497e-8760-fb81d20e3eea",
+					"protocol": "https",
+					"host": [
+						"cxnpz5tld5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"tasks",
+						"2e40e9a8-1f07-497e-8760-fb81d20e3eea"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
