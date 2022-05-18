@@ -21,9 +21,9 @@ const updateTask = async (event) => {
 
     return {
         status: 200,
-        body: JSON.stringify({
+        body: {
             message: "Task updated successfully"
-        })
+        }
     };
 };
 
