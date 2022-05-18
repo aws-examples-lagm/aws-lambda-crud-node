@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"My first task 3\",\r\n    \"description\": \"First description 3\"\r\n}",
+					"raw": "{\r\n    \"title\": \"My first task 1\",\r\n    \"description\": \"First description 1\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -64,7 +64,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://cxnpz5tld5.execute-api.us-east-1.amazonaws.com/tasks/2e40e9a8-1f07-497e-8760-fb81d20e3eea",
+					"raw": "https://cxnpz5tld5.execute-api.us-east-1.amazonaws.com/tasks/3f52f837-f198-425c-b241-f75727d4e462",
 					"protocol": "https",
 					"host": [
 						"cxnpz5tld5",
@@ -75,11 +75,217 @@
 					],
 					"path": [
 						"tasks",
-						"2e40e9a8-1f07-497e-8760-fb81d20e3eea"
+						"3f52f837-f198-425c-b241-f75727d4e462"
 					]
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Update task",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"done\": true,\r\n    \"title\": \"Tengo que crear una app\",\r\n    \"description\": \"Usando PHP\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cxnpz5tld5.execute-api.us-east-1.amazonaws.com/tasks/3f52f837-f198-425c-b241-f75727d4e462",
+					"protocol": "https",
+					"host": [
+						"cxnpz5tld5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"tasks",
+						"3f52f837-f198-425c-b241-f75727d4e462"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update task",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"done\": false,\r\n    \"title\": \"Tengo que crear una app\",\r\n    \"description\": \"Usando Flutter\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cxnpz5tld5.execute-api.us-east-1.amazonaws.com/tasks/3f52f837-f198-425c-b241-f75727d4e462",
+							"protocol": "https",
+							"host": [
+								"cxnpz5tld5",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"tasks",
+								"3f52f837-f198-425c-b241-f75727d4e462"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Update task",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"done\": true,\r\n    \"title\": \"Tengo que crear una app\",\r\n    \"description\": \"Usando PHP\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cxnpz5tld5.execute-api.us-east-1.amazonaws.com/tasks/3f52f837-f198-425c-b241-f75727d4e462",
+							"protocol": "https",
+							"host": [
+								"cxnpz5tld5",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"tasks",
+								"3f52f837-f198-425c-b241-f75727d4e462"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Delete task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"done\": true,\r\n    \"title\": \"Tengo que crear una app\",\r\n    \"description\": \"Usando PHP\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cxnpz5tld5.execute-api.us-east-1.amazonaws.com/tasks/2d9f2eeb-73c8-4ff6-a5fc-be465144bd19",
+					"protocol": "https",
+					"host": [
+						"cxnpz5tld5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"tasks",
+						"2d9f2eeb-73c8-4ff6-a5fc-be465144bd19"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update task",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"done\": false,\r\n    \"title\": \"Tengo que crear una app\",\r\n    \"description\": \"Usando Flutter\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cxnpz5tld5.execute-api.us-east-1.amazonaws.com/tasks/3f52f837-f198-425c-b241-f75727d4e462",
+							"protocol": "https",
+							"host": [
+								"cxnpz5tld5",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"tasks",
+								"3f52f837-f198-425c-b241-f75727d4e462"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Update task",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"done\": true,\r\n    \"title\": \"Tengo que crear una app\",\r\n    \"description\": \"Usando PHP\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cxnpz5tld5.execute-api.us-east-1.amazonaws.com/tasks/3f52f837-f198-425c-b241-f75727d4e462",
+							"protocol": "https",
+							"host": [
+								"cxnpz5tld5",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"tasks",
+								"3f52f837-f198-425c-b241-f75727d4e462"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
 		}
 	]
 }
